@@ -1,0 +1,157 @@
+/*用户头像区域*/
+.left-container {
+  .drawer {
+    //display: none;
+    transition: all 0.3s ease;
+  }
+
+  @media screen and (max-width: 767px) {
+    //当屏幕sm以下时隐藏左侧导航栏
+    .slider-bar-primary {
+      display: none;
+      background-color: #00d6b2;
+    }
+  }
+
+  .user-info {
+    position: relative;
+    background-color: $mh-background_color;
+    padding: 5%;
+    box-shadow: $ml-user-container-text-shadow;
+
+    .menu {
+      display: none;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      padding: 2px;
+      color: $text-light-color;
+      @media screen and (max-width: 768px) {
+        //当屏幕sm以下时隐藏左侧导航栏
+        display: block;
+      }
+    }
+
+    /*头像*/
+    .user-picture {
+      @include border_radius(50%);
+      width: 70%;
+      display: block;
+      margin: auto;
+      vertical-align: middle;
+      box-shadow: 0 0 2px 1px $default-border-color;
+      transition: all 0.2s ease;
+
+      @media screen and (max-width: 768px) {
+        width: 20%;
+        padding: 2%;
+        box-shadow: none;
+      }
+    }
+
+    .user-name {
+      margin: auto;
+      width: 70%;
+      text-align: center;
+      vertical-align: middle;
+
+      /*用户姓名的链接*/
+      a {
+        color: $text-light-color;
+        font-size: $mh-user-name-size;
+        font-family: bold;
+
+        &:hover {
+          color: $text-link-active;
+        }
+      }
+
+    }
+  }
+
+}
+
+.middle-container {
+
+  /*顶部导航栏*/
+  .top-nav-bar {
+    height: 60px;
+    line-height: 60px;
+    background-color: $container-background-color;
+    position: relative;
+    border-bottom: $default-border;
+    border-top: $default-border;
+    box-sizing: border-box;
+
+    .collapse {
+      height: 100%;
+      text-align: center;
+      vertical-align: middle;
+      border-right: $default-border;
+      box-sizing: border-box;
+    }
+
+    .search {
+      position: relative;
+      padding: 10px 0px;
+      vertical-align: middle;
+      line-height: 100%;
+
+      .ant-input-group-addon {
+        border: 0px;
+        background-color: transparent;
+      }
+
+      input {
+        border-top: 0 transparent;
+        border-left: 0 transparent;
+        border-right: 0 transparent;
+        font-size: $font-size-large;
+      }
+
+      i {
+        background-color: transparent;
+        &:hover {
+          box-shadow: $default-box-shadow;
+        }
+      }
+    }
+
+    .btn {
+      width: 60px;
+      float: right;
+      @extend .collapse;
+      border-right: 0 transparent;
+      border-left: $default-border;
+
+      &::after {
+        clear: both;
+        content: '';
+        display: table;
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+    min-height: 530px;
+    background-color: $container-background-color;
+    padding: 20px 20px;
+
+    .content-body {
+      background-color: $content-background-color;
+      width: 100%;
+      min-height: 510px;
+    }
+
+    .ant-card {
+      background-color: $content-background-color;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 5px 5px;
+  }
+}

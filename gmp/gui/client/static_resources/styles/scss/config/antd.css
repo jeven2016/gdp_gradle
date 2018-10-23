@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'anticon';
+  src: url("../../iconfont/iconfont.eot");
+  /* IE9*/
+  src: url("../../iconfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../../iconfont/iconfont.woff") format("woff"), url("../../iconfont/iconfont.ttf") format("truetype"), url("../../iconfont/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+/*# sourceMappingURL=antd.css.map */

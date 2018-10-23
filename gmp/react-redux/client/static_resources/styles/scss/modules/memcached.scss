@@ -1,0 +1,18 @@
+
+.cluster-server-container{
+  display: block;
+  position: relative;
+  .label{
+    float:left
+  }
+
+  .button-group{
+    display:inline;
+    float:right;
+
+    &::after{
+      content: '';
+      clear:both;
+    }
+  }
+}

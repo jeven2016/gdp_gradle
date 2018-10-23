@@ -1,0 +1,13 @@
+/*字体阴影*/
+@mixin font-shadow($fontFamily,$text-shadows...) {
+  font-family: $fontFamily;
+  text-shadow: $text-shadows;
+}
+
+/*背景渐变*/
+@mixin liner-gradient($arguments...) {
+  background: -webkit-linear-gradient($arguments);
+  background: -o-linear-gradient($arguments);
+  background: -moz-linear-gradient($arguments);
+  background: linear-gradient($arguments);
+}

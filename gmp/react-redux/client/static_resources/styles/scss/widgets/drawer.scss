@@ -1,0 +1,15 @@
+.drawer {
+  position: relative;
+  background: transparent;
+  transition: all 0.3s ease;
+
+  .drawer-content {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 640px;
+    border: $default-border;
+    background-color: rgba(0, 0, 0, .7);
+  }
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bugs</title>
+</head>
+<body>
+Material UI Bugs:
+1. build failed: ReferenceError: Unknown plugin "transform-class-properties"
+    workaround: npm install babel-plugin-transform-class-properties babel-plugin-add-module-exports babel-preset-stage-0 --save-dev
+    descripts: The same thing happen with the following plugins:
+                babel-plugin-add-module-exports
+                babel-preset-stage-0
+                So basically the workaround is adding all of them in my devDependencies.
+    link: https://github.com/rofrischmann/inline-style-prefixer/issues/92#issuecomment-233912228
+</body>
+</html>

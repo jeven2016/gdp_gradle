@@ -1,0 +1,5 @@
+rootProject.name = 'gdp_gradle'
+
+include 'gmp'
+//findProject(':gmp:smf')?.name = 'smf'
+

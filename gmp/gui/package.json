@@ -1,0 +1,56 @@
+{
+  "name": "gui",
+  "version": "1.0.0",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.10.2",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.1.1",
+    "eslint-loader": "^1.4.1",
+    "eslint-plugin-react": "^5.2.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "image-webpack-loader": "^2.0.0",
+    "node-sass": "^3.8.0",
+    "redux-devtools": "^3.3.1",
+    "resolve-url-loader": "^1.6.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.14.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config webpack-dev.config.js --dev-tool eval --progress --hot --inline --colors --history-api-fallback",
+    "build": "NODE_ENV=production webpack --config webpack-production.config.js --progre--colors",
+    "prod": "webpack-dev-server --config webpack-production.config.js --progress"
+  },
+  "dependencies": {
+    "antd": "^1.7.0",
+    "lodash": "^4.13.1",
+    "rc-tween-one": "^0.8.2",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-grid-layout": "^0.12.7",
+    "react-motion": "^0.4.4",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.2",
+    "react-router-redux": "^4.0.5",
+    "react-tap-event-plugin": "^1.0.0",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "description": "<!DOCTYPE html> <html lang=\"en\"> <head>     <meta charset=\"UTF-8\">     <title>Bugs</title> </head> <body> Material UI Bugs: 1. build failed: ReferenceError: Unknown plugin \"transform-class-properties\"     workaround: npm install babel-plugin-transform-class-properties babel-plugin-add-module-exports babel-preset-stage-0 --save-dev     descripts: The same thing happen with the following plugins:                 babel-plugin-add-module-exports                 babel-preset-stage-0                 So basically the workaround is adding all of them in my devDependencies.     link: https://github.com/rofrischmann/inline-style-prefixer/issues/92#issuecomment-233912228 </body> </html>",
+  "main": "webpack-dev.config.backup.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "Jeven Wang",
+  "license": "MIT"
+}

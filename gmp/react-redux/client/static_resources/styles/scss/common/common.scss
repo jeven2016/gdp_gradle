@@ -1,0 +1,21 @@
+
+body {
+  background-image: url("../../images/b.jpg"); //路径以app.scss的相对路径为准
+  //background-color: $body-background-color;
+  background-size: cover;
+  font-family: "微软雅黑", "Times New Roman", Times, serif;
+  font-size: 14px ; //The default text size in browsers is 16px. So, the default size of 1em is 16px
+}
+
+/*定义边框的弧度*/
+@mixin border_radius($radius : 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border(){
+
+}
+
+

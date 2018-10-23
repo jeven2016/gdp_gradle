@@ -1,0 +1,97 @@
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.login-container {
+  position: relative;
+  border: 5px solid #e0e0e0;
+  box-shadow: $ml-container-box-shadow;
+  background-color: $ml-container-background-color; //$ml-container-background-color;
+  //background: linear-gradient(to right, rgba(0,0,0,.3), rgba(236,242,246,1));
+  display: inline-block;
+  vertical-align: middle;
+  @include border_radius();
+
+  &:hover {
+    //@include liner-gradient(-120deg, rgb(129, 168, 240) 20%, $ml-container-background-color 80%);
+  }
+
+  label {
+    font-size: $label-large;
+  }
+
+  input {
+    height: $input-large;
+    font-size: $input-font-large;
+    color: $ml-container-input-text-color;
+    background-color: rgba(239, 237, 237, 0.3); //$ml-container-input-background-color;
+
+    &:hover {
+      background-color: rgb(239, 237, 237);
+    }
+  }
+
+  .icon {
+    color: $ml-container-icon-color;
+  }
+
+  .header {
+    padding: 10px;
+    min-height: 50px;
+    font-size: $label-large;
+    color: $ml-container-header-text-color;
+
+    @include font-shadow(bold, $ml-container-header-text-shadow);
+  }
+
+  .body {
+    margin-top: 40px;
+    padding: 10px;
+  }
+
+  .forgot-password-link {
+    float: right;
+    font-size: $label-normal;
+    margin-right: 5px;
+    color: $ml-container-forgot-password-link-color;
+    @include font-shadow(bold, $ml-container-header-text-shadow);
+  }
+}
+
+.login-title {
+  position: relative;
+  margin: 30% 0 0;
+  text-align: center;
+  vertical-align: middle;
+  font-size: $ml-container-title-font-size;
+  color: $ml-container-header-text-color;
+  @include font-shadow(bold, $ml-container-header-text-shadow);
+
+  &:hover {
+    color: #2e6da4;
+  }
+}

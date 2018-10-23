@@ -1,0 +1,9 @@
+
+A depends on lib.js
+B depends on A.js and lib.js
+C depends on A.js,B.js
+
+Test
+two artifacts : lib.js app.js
+three artifacts: lib.js , A-B.js, C.js
+four : lib.js , A.js,B.js,C.js

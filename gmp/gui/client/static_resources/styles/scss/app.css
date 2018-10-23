@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/*body 背景色*/
+/*text*/
+/*默认边框的颜色*/
+/*默认边框*/
+/*默认container背景色*/
+/*module: login->  以ml为前缀*/
+/*module: Home*/
+/*用户头像背景颜色*/
+/*用户头像背景颜色*/
+/*module: memcached cluster*/
+/*字体阴影*/
+/*背景渐变*/
+/*系统默认字体尺寸*/
+/*label字体设置*/
+/*input height设置*/
+/*module:login*/
+/*module:Home*/
+.drawer {
+  position: relative;
+  background: transparent;
+  transition: all 0.3s ease; }
+  .drawer .drawer-content {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 640px;
+    border: 1px solid #e5e5e5;
+    background-color: rgba(0, 0, 0, 0.7); }
+
+/*左侧边栏*/
+.slider-bar {
+  margin: 10px 0px 0px;
+  border: 1px solid #fff;
+  padding: 5% 0 5% 5%;
+  margin: 0;
+  min-height: 500px;
+  transition: all 0.2s ease; }
+  .slider-bar .ant-menu {
+    background: transparent; }
+  .slider-bar .ant-menu-item-selected, .slider-bar .ant-menu-selected {
+    border-right: 5px solid #2db7f5; }
+
+.slider-bar-primary {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.slider-bar-secondary {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+body {
+  background-image: url("../../images/b.jpg");
+  background-size: cover;
+  font-family: "微软雅黑", "Times New Roman", Times, serif;
+  font-size: 14px; }
+
+/*定义边框的弧度*/
+.content-area .ant-card-head-title {
+  font-size: 20px;
+  font-family: bold; }
+
+.simple-table th {
+  padding: 5px 8px; }
+
+/*用户头像区域*/
+.left-container .drawer {
+  transition: all 0.3s ease; }
+@media screen and (max-width: 767px) {
+  .left-container .slider-bar-primary {
+    display: none;
+    background-color: #00d6b2; } }
+.left-container .user-info {
+  position: relative;
+  background-color: #4a89dc;
+  padding: 5%;
+  box-shadow: 0px 0px 4px #000000;
+  /*头像*/ }
+  .left-container .user-info .menu {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 2px;
+    color: #eee; }
+    @media screen and (max-width: 768px) {
+      .left-container .user-info .menu {
+        display: block; } }
+  .left-container .user-info .user-picture {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    vertical-align: middle;
+    box-shadow: 0 0 2px 1px #e5e5e5;
+    transition: all 0.2s ease; }
+    @media screen and (max-width: 768px) {
+      .left-container .user-info .user-picture {
+        width: 20%;
+        padding: 2%;
+        box-shadow: none; } }
+  .left-container .user-info .user-name {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    vertical-align: middle;
+    /*用户姓名的链接*/ }
+    .left-container .user-info .user-name a {
+      color: #eee;
+      font-size: 20px;
+      font-family: bold; }
+      .left-container .user-info .user-name a:hover {
+        color: #b94846; }
+
+.middle-container {
+  /*顶部导航栏*/ }
+  .middle-container .top-nav-bar {
+    height: 60px;
+    line-height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    box-sizing: border-box; }
+    .middle-container .top-nav-bar .collapse, .middle-container .top-nav-bar .btn {
+      height: 100%;
+      text-align: center;
+      vertical-align: middle;
+      border-right: 1px solid #e5e5e5;
+      box-sizing: border-box; }
+    .middle-container .top-nav-bar .search {
+      position: relative;
+      padding: 10px 0px;
+      vertical-align: middle;
+      line-height: 100%; }
+      .middle-container .top-nav-bar .search .ant-input-group-addon {
+        border: 0px;
+        background-color: transparent; }
+      .middle-container .top-nav-bar .search input {
+        border-top: 0 transparent;
+        border-left: 0 transparent;
+        border-right: 0 transparent;
+        font-size: 20px; }
+      .middle-container .top-nav-bar .search i {
+        background-color: transparent; }
+        .middle-container .top-nav-bar .search i:hover {
+          box-shadow: 1px 1px 20px 0 rgba(29, 25, 240, 0.4); }
+    .middle-container .top-nav-bar .btn {
+      width: 60px;
+      float: right;
+      border-right: 0 transparent;
+      border-left: 1px solid #e5e5e5; }
+      .middle-container .top-nav-bar .btn::after {
+        clear: both;
+        content: '';
+        display: table; }
+  .middle-container .content {
+    width: 100%;
+    min-height: 530px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px 20px; }
+    .middle-container .content .content-body {
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 100%;
+      min-height: 510px; }
+    .middle-container .content .ant-card {
+      background-color: rgba(255, 255, 255, 0.5); }
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 5px 5px; } }
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px; }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px; }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px; }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px; }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px; } }
+.login-container {
+  position: relative;
+  border: 5px solid #e0e0e0;
+  box-shadow: 1px 1px 20px 0 rgba(29, 25, 240, 0.4);
+  background-color: rgba(74, 137, 220, 0.5);
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+  .login-container label {
+    font-size: 20px; }
+  .login-container input {
+    height: 40px;
+    font-size: 20px;
+    color: #272b30;
+    background-color: rgba(239, 237, 237, 0.3); }
+    .login-container input:hover {
+      background-color: #efeded; }
+  .login-container .icon {
+    color: #b94846; }
+  .login-container .header {
+    padding: 10px;
+    min-height: 50px;
+    font-size: 20px;
+    color: white;
+    font-family: bold;
+    text-shadow: 2px 2px 15px #000000; }
+  .login-container .body {
+    margin-top: 40px;
+    padding: 10px; }
+  .login-container .forgot-password-link {
+    float: right;
+    font-size: 14px;
+    margin-right: 5px;
+    color: white;
+    font-family: bold;
+    text-shadow: 2px 2px 15px #000000; }
+
+.login-title {
+  position: relative;
+  margin: 30% 0 0;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 40px;
+  color: white;
+  font-family: bold;
+  text-shadow: 2px 2px 15px #000000; }
+  .login-title:hover {
+    color: #2e6da4; }
+
+.cluster-server-container {
+  display: block;
+  position: relative; }
+  .cluster-server-container .label {
+    float: left; }
+  .cluster-server-container .button-group {
+    display: inline;
+    float: right; }
+    .cluster-server-container .button-group::after {
+      content: '';
+      clear: both; }
+
+/*# sourceMappingURL=app.css.map */
